@@ -12,14 +12,14 @@ about: 'about.html'
                     <img src="{{ page.logo }}" alt="Blog Logo" />
                 </a>
             {% endif %}
-        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>
+        <!--<a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>-->
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">{{ site.name }}</h1>
             <h2 class="page-description">
                 {% if site.description %} {{ site.description }}. {% endif %}
-                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
+                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> Über uns </a> {% endif %}
             </h2>
         </div>
     </div>
@@ -29,11 +29,18 @@ about: 'about.html'
 
 <main id="content" class="content" role="main">
 
+  <!--<div class="panel">
+    <h5>This is a regular panel.</h5>
+    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  </div>-->
 
-    <div class="extra-pagination inner">
-        {% include pagination.html %}
+  <center>
+    <div style="max-width:720px;">
+      <a href="#" class="button large expand info"><h3>Podcast anhören</h3></a>
     </div>
+  </center>
 
+    <!--
     {% for post in paginator.posts %}
 
     <article class="post">
@@ -48,17 +55,17 @@ about: 'about.html'
                 <img class="author-thumb" src="/assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
                 {{ site.author }}
             {% endif %}
-            {% if post.categories.size > 0 %} 
-                {{ post.categories | array_to_sentence_string | prepend: 'on ' }} 
+            {% if post.categories.size > 0 %}
+                {{ post.categories | array_to_sentence_string | prepend: 'on ' }}
             {% endif %}
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}
-            </time> 
+            </time>
         </footer>
     </article>
 
     {% endfor %}
 
-    {% include pagination.html %}
+    {% include pagination.html %}-->
 
 </main>

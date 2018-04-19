@@ -10,5 +10,9 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-	"syntax"
+	"syntax",
+	"foundation/components/block-grid"
 ;
+
+$block-grid-elements: 12;
+$block-grid-default-spacing: rem-calc(20);
