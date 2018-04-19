@@ -8,6 +8,15 @@
 	display:inline;
 }
 
+a.button.profile {
+	margin-top: 1em;
+}
+
+a.button.podcast {
+	color: #fff;
+	font-weight: bold;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"syntax"

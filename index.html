@@ -2,7 +2,6 @@
 layout: default
 title: Home
 cover: false
-about: 'about.html'
 ---
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
@@ -34,11 +33,57 @@ about: 'about.html'
     <p>It has an easy to override visual style, and is appropriately subdued.</p>
   </div>-->
 
-  <center>
-    <div style="max-width:720px;">
-      <a href="#" class="button large expand info">Podcast anhören</a>
+  <div class="row">
+    <div class="small-3 small-centered large-6 large-centered columns">
+        <a href="#" class="button large expand podcast">Podcast anhören</a>
     </div>
   </center>
+
+  <hr />
+
+  <div class="row">
+    <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
+      <li>
+        <center>
+          <h3>Patrick Koglin</h3>
+          <p>
+            <div>
+              <img src="/assets/images/profile-sample.png" style="width:250px"/>
+            </div>
+            <div>
+              <a href="http://twitter.com/" class="button profile">Patrick bei Twitter</a>
+            </div>
+          </p>
+        </center>
+      </li>
+      <li>
+        <center>
+          <h3>David Orlowski</h3>
+          <p>
+            <div>
+              <img src="/assets/images/profile-sample.png" style="width:250px"/>
+            </div>
+            <div>
+              <a href="http://twitter.com/" class="button profile">David bei Twitter</a>
+            </div>
+          </p>
+        </center>
+      </li>
+      <li>
+        <center>
+          <h3>Thorben Egberts</h3>
+          <p>
+            <div>
+              <img src="/assets/images/profile-sample.png" style="width:250px"/>
+            </div>
+            <div>
+              <a href="http://twitter.com/" class="button profile">Thorben bei Twitter</a>
+            </div>
+          </p>
+        <center>
+      </li>
+    </ul>
+  </div>
 
     <!--
     {% for post in paginator.posts %}
