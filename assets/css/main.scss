@@ -17,6 +17,12 @@ a.button.podcast {
 	font-weight: bold;
 }
 
+img.gravatar-avatar {
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"syntax"
