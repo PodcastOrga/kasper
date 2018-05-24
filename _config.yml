@@ -8,7 +8,7 @@ logo: false
 paginate: 15
 baseurl: /
 domain_name: 'https://www.productflow-podcast.de'
-google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-87248688-2'
 gems:
   - jekyll-paginate
 
