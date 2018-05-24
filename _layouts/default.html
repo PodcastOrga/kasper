@@ -42,6 +42,42 @@
     <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="/assets/js/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script type="text/javascript" src="/assets/js/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+
+    <!-- Cookie Consent -->
+
+  <link rel="stylesheet" type="text/css" href="/javascripts/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="/javascripts/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>-->
+  <script>
+    window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#000"
+          },
+          "button": {
+            "background": "#97D3EE",
+            "text": "#000"
+          }
+        },
+        "theme": "classic",
+        "position": "bottom-left",
+        "content": {
+          "message": "Diese Website nutzt Cookies, um ein besseres Nutzererlebnis bieten zu können.",
+          "dismiss": "Verstanden",
+          "allow": "Cookies erlauben",
+          "link": "Datenschutz",
+          "href": "/datenschutz.html"
+        }
+      })
+    });
+  </script>
+
+  <!-- Cookie Consent END -->
+
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
 
